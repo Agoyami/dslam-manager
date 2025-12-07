@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2022",                  /* Spécifie la version cible de ECMAScript. */
+    "module": "commonjs",                /* Spécifie le système de modules pour le code généré. */
+    "outDir": "./dist",                  /* Spécifie le répertoire de sortie pour la compilation. */
+    "rootDir": "./src",                     /* Spécifie le répertoire racine des fichiers source. */
+    "strict": true,                      /* Active toutes les options de vérification de type strictes. */
+    "esModuleInterop": true,             /* Permet une meilleure compatibilité entre CommonJS et ES Modules. */
+    "skipLibCheck": true,                /* Ignore les vérifications de type des fichiers de déclaration. */
+    "forceConsistentCasingInFileNames": true, /* Assure une casse cohérente dans les noms de fichiers. */
+    "resolveJsonModule": true,           /* Permet d'importer des modules JSON. */
+    "sourceMap": false,                   /* Génère des fichiers .map pour le débogage. */
+    "allowJs": true                      /* Permet d'inclure des fichiers JavaScript dans le projet. */
+  },
+  "include": [
+    "**/*.ts",                           /* Inclut tous les fichiers .ts */
+    "**/*.js",                           /* Permet de compiler des fichiers .js */
+    "**/*.json"                          /* Inclut les fichiers .json */
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test*.js",
+    "test*.json",
+  ]
+}

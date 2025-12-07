@@ -1,0 +1,31 @@
+{
+  "name": "dslam-manager",
+  "version": "1.0.0",
+  "description": "DSLAM and NRA connectivity manager for French network infrastructure",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "start:complete": "npm run build && node dist/index.js complete",
+    "start:retest": "npm run build && node dist/index.js retest",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "dslam",
+    "nra",
+    "connectivity",
+    "network",
+    "mongodb"
+  ],
+  "author": "Ton nom",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mongodb": "^6.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
