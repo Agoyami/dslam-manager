@@ -2,7 +2,7 @@ import { MongoClient, Db, Collection } from 'mongodb';
 const { spawn } = require('child_process');
 import { DslamInfoDB, NraInfo, ConnectivityTestResult, GlobalProcessingResult, ProcessingPhaseResult, DslamInfo} from '../types/interface'
 import dotenv from 'dotenv';
-dotenv.config({path: '../.env'});
+dotenv.config()
 
 class DslamDBManager {
     private client: MongoClient;
